@@ -31,3 +31,5 @@ Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uni
 Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* `
     | Sort-Object DisplayName `
     | Export-Csv -path $OutputCsvPath -NoTypeInformation;
+
+
