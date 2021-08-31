@@ -1,12 +1,12 @@
-﻿## Remove-UserDownloads
+﻿# Remove-UserDownloads
 
-## PARAMETERS
+# PARAMETERS
 
 Param(
     $Path = [IO.Path]::Combine($env:USERPROFILE, 'Downloads'),
     $Days = 30);
 
-## VALIDATE PARAMETERS
+# VALIDATE PARAMETERS
 
 if(!(Test-Path -Path $Path)) {
     Throw "The following path could not be found: $Path ";
@@ -16,7 +16,7 @@ if(!($Days -is [int])) {
     Throw "The days supplied is not an integer: $Days ";
 }
 
-## PROCESS
+# PROCESS
 
 if($Days -ge 0) {
     $Days = $Days * -1;
