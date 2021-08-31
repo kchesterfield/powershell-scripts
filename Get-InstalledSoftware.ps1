@@ -1,4 +1,6 @@
-﻿# PARAMETERS
+# Get-InstalledSoftware
+
+# PARAMETERS
 
 Param($Path = $env:USERPROFILE + "\Documents\" + "InstalledSoftware\")
 
